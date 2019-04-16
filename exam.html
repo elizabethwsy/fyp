@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700|Fira+Sans+Condensed: 300,400,500,700|Oswald: 300,400,600" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/jquery.jscrollpane.custom.css" />
+		<link rel="stylesheet" type="text/css" href="css/bookblock.css" />
+		<link rel="stylesheet" type="text/css" href="css/custom-exam.css" />
+		<script src="js/modernizr.custom.79639.js"></script>
+		<title>NTU Exam Guide</title>
+	</head>
+	<body>
+		<div id="container1" class="container1">	
+			<div class="menu-panel">
+				<h3>Exam Guide</h3>
+				<ul id="menu-toc" class="menu-toc">
+					<li class="menu-toc-current" style="display: none;"><a href="#item0">Overview</a></li>
+					<li><a href="#item1">If Grades Matter</a></li>
+					<li><a href="#item2">Pre Exam</a></li>
+					<li><a href="#item3">Post Exam</a></li>
+					<li><a href="#item4">Absent From Exam</a></li>
+					<li><a href="#item5">Tips & Advice</a></li>
+					<li><a href="#item6">Resources</a></li>
+				</ul>
+				<div>
+					<a href="stars.html">STARS Guide &rarr;</a>
+					<a href="general.html"> &larr; General Guide </a>
+				</div>
+				<div>
+					<a href="index.php">Home</a>
+				</div>
+			</div>
+
+			<div class="bb-custom-wrapper" style="text-align: center;">
+				<div id="bb-bookblock" class="bb-bookblock" >
+					<div class="bb-item" id="item0" >
+						<div class="col-md-6 test-class p-0">
+			            	<img src="images/exam-content.jpg" style="width: 95%;margin-left: 4%; object-fit: cover; height: 100vh;">
+			            </div>
+						<div class="content" style="bottom:0;">
+							<div class="scroller" id="opening" style="align-content: center;">
+								<div class="row">
+						            <div class="col-md-6 p-2 text-center" id="display-none">
+						            </div>
+						            <div class="col-md-6 p-3">
+						            	<div class="big-number" >
+						            		<h2 id="one">1</h2>
+						            	</div>
+										<div class="header overview">
+											<h4 class="big-title">Overview</h4>
+										</div>
+						            	<div class="intro" id="intro">
+											<p>
+												This guide serves as a quick reference to all you the essentials you need to know about examinations in NTU EEE. Swipe or click on the menu bar to navigate through the book.<br><br>
+
+												For more information, visit the <a href="https://www.ntu.edu.sg/Students/Undergraduate/AcademicServices/Examination/Pages/default.aspx" class="links">NTU website.</a>
+											</p>
+										</div>
+						          </div>
+						        </div>
+							</div>
+						</div>
+					</div>
+					<div class="bb-item" id="item1">
+			            <div class="col-md-6 pre-content" style="z-index: 4;">
+			            	<div class="big-number-2">
+			            		<h2>2</h2>
+			            	</div>
+			            	<div class="header grades">
+								<h4 class="big-title" id="second-sect">If Grades Do Matter</h4>
+							</div>
+			         	</div>
+
+						<div class="content">
+							<div class="scroller pt-0">
+								<div class="row">
+					            <div class="col-md-6 cgpa">
+					            	<div class="text-grey">
+										<p class="para-header mb-0 ">Cumulative Grade Point Average <small>(CGPA)</small> </p>
+										<p class="pr-md-2">CGPA is the grade average of all courses (failed ones too) attempted by a student. Only letter graded courses are computed </p>
+										<p class="pl-md-2">There's no need to know how to calculate it but if you really want:</p>
+										<p style="text-align: center; margin-bottom: 0px; line-height:1; padding-bottom:0px;"><u><small>[Grade Point x AU for Course 1] +…+ [Grade Point x AU for Course X]</small></u></p>
+										<p style="text-align: center; padding-top: 0px;"><small>[Total AU attempted in all semesters so far]</small></p>
+										<br>
+										<p class="para-header pl-2">Freshman GPA Exemption</p>
+										<p class="pl-2 pr-2 mb-2">Freshmen can exempt up to 6 letter-grade courses that failed on the first attempt (F grade) <small>*T&C Apply</small></p>
+									</div>
+									<div class="row gpa-grades pt-3">
+										<div class="col-sm-6 col-md-5 no-pl ptpb" id="display-none">
+											<img src="images/paper.jpg" style="width: 100%; height: 100%; object-fit: cover;">
+										</div>
+										<div class="col-sm-6 col-md-7 text-ashblue ptpb">
+											<p class="para-header">Grades and GPA </p>
+											<p>Grades and their equivalient:</p>
+											<table class="gpa-table">
+											  <tr>
+											    <th scope="col"><u>Grade</u></th>
+											    <th scope="col"><u>GPA</u></th>
+											  </tr>
+											  <tr>
+											  	<th scope="row">A+/A</th>
+											    <td>5.00</td>
+											  </tr>
+											  <tr>
+											    <th scope="row">A-</th>
+											    <td>4.50</td>
+											  </tr>
+											  <tr>
+											    <th scope="row">B+</th>
+											    <td>4.00</td>
+											  </tr>
+											  <tr>
+											    <th scope="row">B</th>
+											    <td>3.50</td>
+											  </tr>
+											  <tr>
+											    <th scope="row">B-</th>
+											    <td>3.00</td>
+											  </tr>
+											  <tr>
+											    <th scope="row">C+</th>
+											    <td>2.50</td>
+											  </tr>
+											  <tr>
+											    <th scope="row">C</th>
+											    <td>2.00</td>
+											  </tr>
+											  <tr>
+											    <th scope="row">D+</th>
+											    <td>1.50</td>
+											  </tr>
+											  <tr>
+											    <th scope="row">D</th>
+											    <td>1.00</td>
+											  </tr>
+											  <tr>
+											    <th scope="row">F</th>
+											    <td>0</td>
+											  </tr>
+											</table>
+											<p>
+												If you S/U a certain module:<br>
+												S : Satisfactory<br>
+												U: Unsatisfactory (you've “failed”)
+											</p>
+										</div>
+									</div>
+					            </div>
+					            <div class="col-md-6 academics">
+					            	<div class="row">
+					            		<div class="col-sm-7 col-md-8 text-coral">
+					            			<p class="para-header mb-0">Academic Standing </p>
+					            			<p class="mb-0">Criteria for satisfactory academic standing:</p>
+					            			<ul class="acad-standing">
+​​​												<li style="margin-top: -5%;"> Min CGPA of 2.00</li>
+												<li>Complete > 75% of normal AU workload</li>
+											</ul>
+											<p class="mb-0">Students with poor results receive the following and subjected to performance review:</p>
+												<ul class="acad-standing">
+													<li><strong>Warning</strong> – CGPA < 2.00 for any semester</li>
+													<li><strong>Probation </strong> – CGPA < 2.00 the following semester</li>
+													<li><strong>Termination </strong>– CGPA < 2.00 for 3 consecutive semesters / at the end of final semester of study.  A letter of termination will be issued </li>
+												</ul>
+					            		</div>
+										<div class="col-sm-5 col-md-4 no-pr"id="display-none">
+											<img src="images/paper.jpg" style="width: 100%;height: 100%; object-fit: cover;">
+										</div>
+									</div>
+									<div class="row pt-3" style="margin-left: 0;">
+										<div class="text-grey deans col-sm-5 col-md-12 col-lg-5 p-4">
+											<p class="para-header mb-0">Dean’s List</p>
+											<p>
+												Dean’s List is awarded to top 5% of the cohort,  having YGPA > 4.50 and attained the specified AU of graded courses by curriculum type taken in NTU in the academic year
+											</p>
+										</div>
+										<div class="text-ashblue degree col-sm-6 col-md-12 col-lg-6 p-4">
+											<p class="para-header">Degree Classification </p>
+											<table class="degree-table">
+											  <tr>
+											    <th scope="col"><u>Class</u></th>
+											    <th scope="col"><u>GPA Range</u></th>
+											  </tr>
+											  <tr>
+											  	<th scope="row">Honours (Highest Distinction)</th>
+											    <td>4.50-5.00</td>
+											  </tr>
+											  <tr>
+											    <th scope="row">Honours (Distinction)</th>
+											    <td>4.00-4.99</td>
+											  </tr>
+											  <tr>
+											    <th scope="row">Honours (Merit)</th>
+											    <td>3.50-3.99</td>
+											  </tr>
+											  <tr>
+											    <th scope="row">Honours</th>
+											    <td>3.00-3.49</td>
+											  </tr>
+											  <tr>
+											    <th scope="row">Pass</th>
+											    <td>2.00-2.99</td>
+											  </tr>
+											</table>
+
+										</div>
+									</div>
+					          </div>
+					        </div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="bb-item" id="item2">
+						<div class="row" style="height: 100%;">
+							<div class="col-md-6 test-class p-3" style="height: 100%;">
+				            	<img src="images/study.jpg" style="width: 90%;margin-left: 9%; height: 100%; object-fit: cover;">
+				            </div>
+				            <div class="col-md-6 fixed-big-number">
+					            <div class="big-number">
+				            		<h2 id="three">3</h2>
+				            	</div>
+				            </div>
+				        </div>
+						<div class="content" style="bottom:0;">
+							<div class="scroller" style="align-content: center;">
+								<div class="row">
+						            <div class="col-md-6 p-2 text-center" id="display-none">
+						            </div>
+						            <div class="col-md-6 p-3">
+										<div class="header overview" >
+											<h4 class="big-title">Pre-Exam Preparations</h4>
+										</div>
+						            	<div class="no-scroll">
+											<p class="para-header">Before you sit for your exam, you need to:</p>
+											<p>
+												1. Check <a href="https://wis.ntu.edu.sg/webexe/owa/exam_timetable_und.main" class="links">Exam Timetable</a><br>
+												2. Check <a href="http://www.ntu.edu.sg/Students/Undergraduate/AcademicServices/Examination/Pages/ExamSeatingArrangements.aspx" class="links">Seating Plan</a><br>
+												3. Seal Your Calculator/Dictionary<br>
+												4. Check your Exam Hall (Save a copy <a href="images/exam-map.png" class="links">HERE!</a>)<br>
+												5. Practiced your <a href="https://ts.ntu.edu.sg/sites/lib-repository/exam-question-papers" class="links"> Past Year Papers </a>
+											</p>
+											<p>
+												For more detailed information, visit the <a href="https://www.ntu.edu.sg/Students/Undergraduate/AcademicServices/Examination/Pages/default.aspx" class="links">NTU website.</a>
+											</p>
+										</div>
+						          </div>
+						        </div>
+							</div>
+						</div>
+					</div>
+					<div class="bb-item" id="item3">
+						<div class="row" style="height: 100%;">
+							<div class="col-md-6 test-class p-3" style="height: 100%;">
+				            	<img src="images/freedom.jpg" style="width: 90%;margin-left: 9%; height: 100%; object-fit: cover;">
+				            </div>
+				            <div class="col-md-6 fixed-big-number">
+					            <div class="big-number">
+				            		<h2>4</h2>
+				            	</div>
+				            </div>
+				        </div>
+						<div class="content" style="bottom:0;">
+							<div class="scroller" style="align-content: center;">
+								<div class="row">
+						            <div class="col-md-6 p-2 text-center">
+						            </div>
+						            <div class="col-md-6 p-3">
+										<div class="header overview post-exam" >
+											<h4 class="big-title">Post-Exam Information</h4>
+										</div>
+						            	<div class="no-scroll" style="width: 77%;">
+											<p class="para-header" style="line-height: 1.6;">Hurray, you're done with your exams! <br>Here’s what you can do next:</p>
+											<p>
+												1. Check <a href="http://www.ntu.edu.sg/Students/Undergraduate/AcademicServices/Examination/Pages/ExaminationResults.aspx" class="links">Exam Results</a><br>
+												2. Review  <a href="http://www.ntu.edu.sg/Students/Undergraduate/AcademicServices/Examination/Pages/ReviewofExamResults.aspx" class="links">Exam Results</a><br>
+												3. Retrieve Lost Items 
+
+											</p><br>
+											<p class="para-header">If you're not happy with your grades, </p>
+											<p>
+												- Apply for an examination results review. <br>
+												- All applications must be submitted online through StudentLink and payments made within 1 week from the date of release of examination results. <br><br>
+												Login in <a href="https://sso.wis.ntu.edu.sg/webexe88/owa/sso_redirect.asp?t=1&app=https://wis.ntu.edu.sg/webexe/owa/revexam_studmain.main" class="links">HERE!</a><br><br>
+												You will be charged $10.00 per course ($10.70 with GST). Make your payment online or at One Stop@SAC.
+											</p><br>
+											<p class="para-header">Appeal Against Outcome of Review</p>
+											<p>
+												If you are dissatisfied with the outcome of the review, you may appeal to the Academic Appeal Board at the University level if you have sufficient grounds.
+											</p><br>
+											<p class="para-header">If you've left something in the exam hall,</p>
+											<p>
+												Any items left behind <u>inside</u> the examination hall will be placed in a lost and found box inside the hall throughout the examination period. So you can go back to the hall <i>30 mins</i> before the start of the next paper to get it.</p>
+											<p>
+												For items left <u>outside</u> of the examination hall, proceed to One Stop@SAC the next working day.
+											</p>
+
+										</div>
+						          </div>
+						        </div>
+							</div>
+						</div>
+					</div>
+					<div class="bb-item" id="item4">
+						<div class="row" style="height: 100%;">
+				            <div class="col-md-6 pre-content" style="z-index: 4; height:20%;">
+					            <div class="big-number-2">
+				            		<h2>5</h2>
+				            	</div>
+				            	<div class="header grades">
+									<h4 class="big-title" id="second-sect">When Absent From Exams</h4>
+								</div>
+				            </div>
+							<div class="col-xs-12 col-md-6 test-class p-3" style="height: 100%;">
+				            	<img src="images/sick.jpg" style="width: 90%;margin-right: 9%; height: 100%; object-fit: cover;">
+				            </div>
+				        </div>
+						<div class="content" style="bottom:0;">
+							<div class="scroller" style="align-content: center;">
+								<div class="row">
+						            <div class="col-md-6 sick">
+					            	<div class="text-ashblue p-4" id="full" style="width:78%; position: relative;">
+										<p class="para-header">If you’re sick during exam: </p>
+										<p class="pr-2">
+											1. Inform the Chief invigilator<br>
+											2. See the doctor if you’re too ill to continue.  (Your paper will still be marked but special consideration may be given if you submit a doctor's memo) 
+										</p>
+										<p class="para-header">If you’re sick before the exam: </p>
+										<p>You need to see a doctor and submit:</p>
+										<p>
+											1. Original MC via <a href="http://www3.ntu.edu.sg/gso/forms/medicalform.pdf" class="links">MC Submission Form</a><br>
+											2. <a href="http://www.ntu.edu.sg/Students/Undergraduate/AcademicServices/Examination/Documents/AAA_Form.pdf" class="links">AAA Form</a>
+										</p><br>
+									</div>
+									<div class="row gpa-grades">
+										<div class="col-xs-12 col-sm-5 pt-4">
+											<div class="text-grey ">
+							            		<p class="para-header"> Absence</p>
+							            		<p>
+							            			If you've registered for a course but fail to take the exam, you'll be considered to have sat for and failed the exam
+							            		</p>
+							            	</div>
+										</div>
+										<div class="col-xs-12 col-sm-7 text-coral p-4 aaa">
+											<p class="para-define text-left" style=" padding: 3px 8%;">1. Authorisation for Release of Information And Acknowledgement (AAA) Form </p>
+											<p style="font-size: 15px;">- Get this endorsed by a medical practitioner and also ensure the diagnosis is indicated on your MC.</p>
+											
+											<p class="para-define">2. &nbsp;MC Submission Form</p>
+											<p style="font-size: 15px;">
+												- Submit this online<br>
+												- indicate the period of your MC and the affected exams within the MC period. Submit the Form with your <i>original MC</i> to One Stop @ SAC.  
+											</p>
+										</div>
+									</div>
+					           		</div>
+						          <div class="col-md-6 p-2 text-center">
+						          </div>
+						        </div>
+							</div>
+						</div>
+					</div>
+					<div class="bb-item" id="item5">
+						<div class="row">
+						<div class="col-md-6 pre-content" style="z-index: 4;">
+			            	<div class="big-number-2">
+			            		<h2>6</h2>
+			            	</div>
+			            	<div class="header grades">
+								<h4 class="big-title" id="second-sect">Tips and Advice</h4>
+							</div>
+			         	</div>
+			         	<div class="col-md-6 pre-content" id="display-none">
+			         		<div class="header help">
+								<h4 class="big-title" id="second-sect">Helplines Just In Case</h4>
+							</div>
+			         	</div>
+						</div>
+						<div class="content">
+							<div class="scroller">
+								<div class="row">
+									<div class="col-md-6" style="padding:0 2% 0 7%; margin-top: -2%;" >
+					            	<div class="text-coral p-4" style="width:78%; position: relative;" id="full">
+										<p class="para-header">Before the exam: </p>
+										<p class="pr-2" style="line-height: 2;">
+											1. List the things that you've finished studying and how much more is left to cover<br>
+											2. Review Past Year Papers and Tutorials <br>
+											3. Check your knowledge against Learning Objectives (make sure you've covered everything)<br>
+											4. Check your exam format (know what you're up against)<br>
+											5. Find your lecturers if you need clarifications 	<br>
+											6. <strong>Get enough sleep!</strong> <br>
+										</p>
+										<p></p>
+									</div>
+									<div class="row gpa-grades">
+										<div class="col-sm-5 pt-4">
+											<div class="text-ashblue ">
+							            		<p>Be sure to be at the exam venue on time (at least <i>10 mins</i> before) so you have time to calm yourself before the start of the paper</p>
+							            	</div>
+										</div>
+										<div class="col-sm-7 text-grey p-4" id="no-margin" style="position: relative; margin-top: -10%; ">
+											<p class="para-header text-left mb-1">On the Day of Your Exam</p>
+											<p style="line-height: 2;" ><strong>Make sure you've brought your:</strong><br>
+												- Matric Card<br>
+												- Jacket <br>
+												- Water Bottle<br>
+												- Calculator/ Dictionary/ Texts<br>
+												- Stationery
+											</p>
+										</div>
+									</div>
+					           		</div>
+					           		<div class="col-md-6" style="padding:0 2%; margin-top: -2%;" >
+						           		<div class="row gpa-grades mt pt-3" style="margin-left: 0;">
+						           			<div class="col-xs-12 col-sm-6 col-md-12 col-xl-6">
+												<div class="text-grey p-4 sldu">
+													<p class="para-define">EEE Student Life and Development Unit (SLDU) <br><small>(S2-B2a-39)</small></p>
+													<p><strong> Pastoral Care:</strong><br>
+														eeestudents@ntu.edu.sg<br>
+														6513 8276 (Thomas Foo)​​<br>
+														6592 2604 (Chan Pei Sian)​<br>
+													</p>
+													<p><strong>Student Development:</strong><br>
+														 eeestudents@ntu.edu.sg<br>
+														6592 1802 (Rachel Fong)<br>
+														6592 2604 (Chan Pei Sian)<br>
+
+													</p>
+												</div>
+											</div>
+											<div class="col-xs-12 col-sm-6 col-md-12 col-xl-6">
+												<div class="text-ashblue p-4" >
+													<p><strong>NTU Student Life and Development Unit (SLDU)</strong><br>
+														6790 6365/	6592 2604<br>
+													</p>
+													<p><strong>Student Wellbeing Centre (SWC)​	​</strong><br>
+														6790 4462</p>
+													<p><strong>Medical Centre​</strong><br>
+														6793 6974</p>
+													<p class="mb-0"><strong>Campus Secruity</strong><br>
+														​6790 5200*<br><small>*24 hours</small></p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="bb-item" id="item6">
+						<div class="row" style="height: 100%;">
+							<div class="col-md-6 test-class p-3" style="height: 100%;">
+				            	<img src="images/school-books.jpg" style="width: 90%;margin-left: 9%; height: 100%; object-fit: cover;">
+				            </div>
+				            <div class="col-md-6 fixed-big-number">
+					            <div class="big-number">
+				            		<h2>7</h2>
+				            	</div>
+				            </div>
+				        </div>
+						<div class="content" style="bottom:0;">
+							<div class="scroller" style="align-content: center;">
+								<div class="row">
+						            <div class="col-md-6 p-2 text-center " id="display-none">
+						            </div>
+						            <div class="col-md-6 p-3">
+										<div class="header overview resources">
+											<h4 class="big-title">Resources</h4>
+										</div>
+						            	<div class="no-scroll">
+											<p class="para-header">Here are a list of resources:</p>
+											<p>
+												1. <a href="https://wis.ntu.edu.sg/webexe/owa/exam_timetable_und.main" class="links">Exam Timetable</a><br>
+												2. <a href="http://www.ntu.edu.sg/Students/Undergraduate/AcademicServices/Examination/Pages/ExamSeatingArrangements.aspx" class="links">Seating Plan</a><br>
+												3. <a href="images/exam-map.png" class="links">Exam Hall</a><br>
+												4. <a href="https://ts.ntu.edu.sg/sites/lib-repository/exam-question-papers" class="links"> Past Year Papers </a><br>
+												5. <a href="https://www.ntu.edu.sg/studentwellbeing/exams/Pages/index.aspx" class="links">Managing Exam Stress</a><br>
+												6. <a href="https://www.ntu.edu.sg/studentwellbeing/contactus/Pages/index.aspx" class="links">Points of contact</a>
+											</p>
+											<p class="para-header">
+												Study hard, study smart! All the best!
+											</p>
+										</div>
+						          </div>
+						        </div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<nav>
+					<span id="bb-nav-next">&#8680;</span>
+					<span id="bb-nav-prev">&#8678;</span>
+				</nav>
+
+				<span id="tblcontents" class="menu-button">Table of Contents</span>
+
+			</div>
+				
+		</div><!-- /container -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="js/jquery.mousewheel.js"></script>
+		<script src="js/jquery.jscrollpane.min.js"></script>
+		<script src="js/jquerypp.custom.js"></script>
+		<script src="js/jquery.bookblock.js"></script>
+		<script src="js/page.js"></script>
+		<script>
+			$(function() {
+
+				Page.init();
+
+			});
+		</script>
+	</body>
+</html>

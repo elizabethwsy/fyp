@@ -1,0 +1,150 @@
+.center {
+  text-align: center;
+}
+
+.white {
+  color: white;
+}
+
+.guide {
+  font-size: 18px;
+}
+
+#general {
+  font-family: 'Asap Condensed';
+  font-size: 180px;
+  letter-spacing: 0.07em;
+  line-height: 0.95em;
+}
+
+.description {
+  font-size: 38px;
+  letter-spacing: 0.06em;
+}
+
+.blue {
+  background-color: #34739D;
+}
+
+.padding-top {
+  padding-top: 120px;
+}
+
+.dotted {
+  margin: 20px;
+  margin-top: 180px;
+  border: 1px dashed #34739D;
+  padding: 10px;
+}
+
+.course .dotted {
+  margin-top: 100px;
+}
+
+h1 {
+  font-family: "Asap Condensed";
+  font-weight: 500;
+  color: #B04E5A;
+  font-size: 36px;
+}
+
+h2 {
+  font-family: "Asap Condensed";
+  font-weight: 500;
+  color: #34739D;
+  font-size: 64px;
+  text-align: center;  
+}
+
+h3 {
+  font-family: "Asap Condensed";
+  font-weight: 500;
+  font-size: 28px;
+}
+
+ul {
+  margin-left: 15px;
+}
+
+.banner {
+  padding-top: 30%;
+  background-image: url("../images/aa.jpg");
+  background-size: cover;
+  background-position: center 30%;
+  margin-bottom: 20px;
+}
+
+.banner-iem {
+  padding-top: 30%;
+  background-image: url("../images/image-2.jpg");
+  background-size: cover;
+  background-position: center 30%;
+  margin-bottom: 20px;
+}
+
+.banner-starwars {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url("../images/star-wars.jpg");
+  background-size: cover;
+  background-position: center 30%;
+}
+
+.header {
+  padding-top: 10%;
+  font-family: "Asap Condensed";
+  font-size: 80px;
+  letter-spacing: 0.08em;
+}
+
+.vertical-text {
+  transform: rotate(180deg);
+  font-family: 'Asap Condensed';
+  font-size: 100px;
+  letter-spacing: 0.2em;
+  writing-mode: tb-rl;
+  height: 100%;
+  position: relative;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+  color: #34739D;
+}
+
+table, th, td {
+  border: 1px solid #34739D;
+}
+
+th {
+  background-color: #34739D;
+  color: white;
+}
+
+table {
+  width: 100%;
+  text-align: center;
+}
+
+.others {
+  background-image: url("../images/general-social.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.others .others-bar {
+  letter-spacing: 0.06em;
+  font-size: 24px;
+}
+
+.others .others-large {
+  font-family: 'Asap Condensed';
+  font-size: 100px;
+}
+
+.jspPane, .scroller {
+  height: 100%;
+}

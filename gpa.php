@@ -113,6 +113,16 @@ a:hover{
   padding: 2rem 0 4rem; 
 }
 
+.cat-links{
+  display: inline-block;
+  padding: .9rem;
+}
+
+.cat-links a{
+  color: #000;
+  font-size:1.2rem;
+}
+
 </style>
 
 
@@ -190,11 +200,12 @@ a:hover{
               $con = mysqli_connect("localhost","root","", "forum");
               $catsql = "SELECT * FROM topics;";
               $catres = mysqli_query($con, $catsql);
-              echo "<div class='col-12'>";
+              echo "<div class='col-12 text-center pb-sm-4'>";
+              echo"<div class='col-sm-* cat-links '><a href='forum.php'>All</a></div>";
               while($catrow = mysqli_fetch_assoc($catres))
-                {
-                echo "<div class='col-md-*' style='display: inline-block; padding:1rem;'>
-                <a href='" . $catrow['slug'] . ".php ' style='color: #000; padding: 1rem;font-size:1.2rem;' >". $catrow['topic'] . "</a></div>";
+                { ?>
+                  <div class="col-sm-* cat-links ">
+         <?php   echo "<a href='" . $catrow['slug'] . ".php '>". $catrow['topic'] . "</a></div>";
                 }
               echo "</div>";
             ?>

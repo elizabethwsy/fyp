@@ -160,12 +160,12 @@ a:hover{
 
   if(isset($_GET['id'])){
   $question_id = $_GET['id'];
-  $insert_query = "select * from forum where id='".$question_id."'";
+  $insert_query = "select * from forum, topics where id='".$question_id."' and forum.topic_id = topics.topic";
   $res=mysqli_query($con, $insert_query);
   $row=mysqli_fetch_array($res);
   $question=$row['question'];
-  $description=$row['description'];
-  $q_topic=$row['topic_id'];
+  $description=$row['t_description'];
+  $q_topic=$row['topic'];
   $time=$row['time'];?>
   <div class="wrapper">
   <!-- Navbar -->
@@ -173,7 +173,8 @@ a:hover{
   <div id="content" class="content">
   <div class="jumbotron">
     <div class="container">
-      <h1 class="jumbotron-header">Home/ <?php echo "$q_topic"?></h1>
+      <h1 class="jumbotron-header pb-3">Home/ <?php echo "$q_topic"?></h1>
+      <p class="jumbotron-header" style="font-size: 1.2rem;"><?php echo "$description"?></p>
     </div>
   </div>
 

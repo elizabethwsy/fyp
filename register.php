@@ -42,6 +42,4 @@
         <div class="col-md-1"></div> 
       </div>
     </div>
-<!-- Footer -->
   <?php include( ROOT_PATH . '/includes/footer.php'); ?>
-<!-- // Footer -->

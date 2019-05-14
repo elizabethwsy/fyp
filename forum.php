@@ -203,20 +203,15 @@ a:hover{
     <div class="jumbotron">
       <div class="container" style="text-align: center;">
         <h2 class="jumbotron-header">Ask Anything</h2>
-          <p class="subheader" style="color: #fff; margin: 0px; text-shadow: 0px 0px 2px #111;">Search for a question first</p>
-        <div class="searchbar">
-          <input class="search_input" type="text" name="" placeholder="Search...">
-          <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
-        </div>
-            
+          <p class="subheader" style="color: #fff; margin: 0px; text-shadow: 0px 0px 2px #111;">Don't be afraid to ask</p>
+          <!-- <div class="searchbar">
+            <form class="search" action="forum.php" method="POST">
+              <input class="search_input" type="text" name="search" placeholder="Search...">
+              <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+              <button type="submit" name="submit-search">submit</button>
+            </form>
+          </div>    -->
       </div>
-    </div>
-
-    <div class="search bar">
-      <!-- <form class="search" action="" method="POST">
-        <input type="text" name="search" placeholder="Search">
-        <button type="submit" name="submit-search">submit</button>
-      </form> -->
     </div>
 
         <!-- Modal -->
@@ -270,6 +265,7 @@ a:hover{
               $catsql = "SELECT * FROM topics;";
               $catres = mysqli_query($con, $catsql);
               echo "<div class='col-12 text-center pb-sm-4'>";
+              echo"<div class='col-sm-* cat-links '><a href='forum.php'>All</a></div>";
               while($catrow = mysqli_fetch_assoc($catres))
                 { ?>
                   <div class="col-sm-* cat-links ">
@@ -397,23 +393,25 @@ a:hover{
 
 
 
-if (isset($_POST['submit-search'])){
-  $search = $_POST['search'];
-  $sql = "select * from forum where question like '%search%' or description like '%search' or  topic_id like '%search%'";
-  $result=mysqli_query($con, $sql);
-    if(mysqli_num_rows($result)>0){
-      while($row=mysqli_fetch_assoc($result)){
-        echo 
-          "<tr>
-            <td><a href=\"post.php?id=$row[id]\" class=\"text-dark\">$row[question]</a></td>
-            <td>$row[topic]</td>
-          </tr>";
-      }  
-    }  else{
-      echo "Sorry, there are no results from your search";
-    }
-}
-
+// if (isset($_POST['submit-search'])){
+//   $search = $_POST['search'];
+//   $search = preg_replace("#[^0-9a-z]#i", "", $search);
+//   $sql = "select * from forum where question like '%$search%' or description like '%$search' or  topic_id like '%$search%'";
+//   $result=mysqli_query($con, $sql);
+//     if(mysqli_num_rows($result)>0){
+//       while($row=mysqli_fetch_assoc($result)){
+//         echo 
+//           "<tr>
+//             <td><a href=\"post.php?id=$row[id]\" class=\"text-dark\">$row[question]</a></td>
+//             <td>$row[topic]</td>
+//           </tr>";
+//       }  
+//     }  else{
+//       echo "Sorry, there are no results from your search";
+//     }
+//     echo "<meta http-equiv='refresh' content='0' ;URL='forum.php'>";
+//       exit(0);
+// }
 
 if(isset($_POST['submit'])){
     $qu = $_POST['question'];

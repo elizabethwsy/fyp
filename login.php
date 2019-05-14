@@ -15,7 +15,7 @@
           <h1 class="register-text">sign&nbsp;in</h1>
       <div class="row padding">
         <div class="contact-text row-group col-xs-12 col-lg-6">
-          <h3>Sign in to enjoy extra features.</h3>
+          <h3>Sign in to your account to gain access to  extra features.</h3>
         </div>
         <div class="row-group col-xs-12 col-lg-5 padding-register">
           <form method="post" action="login.php"class="contact-form form">

@@ -5,9 +5,8 @@
   <title>SurvivEEE | Calculator</title>
 </head>
 <body>
+
   <style>
-
-
 #class-name {
   margin-left: 5px;
   font-size: 1.2rem;
@@ -305,7 +304,7 @@ input{
               </div>
             </div>
         <div class="row" id="menu2">
-          <div class="calctarget col-12">
+          <div class="calctarget col-12 p-0">
             <p>NTU GPA Target Calculator allows you to calculate what the average grades you need in the upcoming semesters in order to achieve your desired GPA or class.</p>
           </div>
             <div id="calcframe" class="calcframeh">
@@ -393,7 +392,7 @@ function getTotal() {
     $frame.append('<p id="q1">I need to take <span class="out">??</span> more AUs if I want to raise my GPA by <input type="text" id="q1_point_amount" value="0.2" /> points at an average GPA of <input type="text" id="q1_gpa_average"></p>');
     $frame.append('<p id="q2">I\'m taking <input type="text" id="q2_credits" value="16" /> AUs this semester. To raise my GPA by <input type="text" id="q2_point_amount" value="0.2" /> points <span id="q2_point_amount_out"></span>, I need a <span class="out">??</span> for this semester.</p>');
     $frame.append('<p id="q3">I\'m left with <input type="text" id="q3_credits" value="16" /> AUs this semester. Best possible GPA is <span class="out">??</span></p>');
-    $frame.append('<p style="text-align:center; margin-bottom:0"><button id="calc-do">Calculate</button></p><p style="margin-bottom:0" id="errors"></p>');
+    $frame.append('<p style="text-align:center; margin-bottom:0"><button id="calc-do" class="btn btn-dark" style="color: #fff;">Calculate</button></p><p style="margin-bottom:0" id="errors"></p>');
 
     $(document).on('change', 'div#calcframe input', doCalc); // Update calculation when numbers change
     $frame.children('#calc-do').click(doCalc); // Update calculation when button is clicked

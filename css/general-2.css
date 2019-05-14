@@ -1,0 +1,356 @@
+.center {
+  text-align: center;
+}
+
+.white {
+  color: white;
+}
+
+.guide {
+  font-size: 18px;
+  letter-spacing: 0.06em;
+}
+
+.general {
+  font-family: 'Asap Condensed';
+  font-size: 180px;
+  letter-spacing: 0.07em;
+  line-height: 0.95em;
+}
+
+.description {
+  font-size: 38px;
+  letter-spacing: 0.06em;
+  padding: 20px;
+  max-width: 440px;
+  display: inline-block;
+  margin-top: 200px;
+}
+
+.blue {
+  background-color: #34739D;
+}
+
+.padding-top {
+  padding-top: 100px;
+}
+
+@media screen and (max-width: 767px) {
+  .general {
+    font-size: 72px;
+    display: inline;
+  }
+  .description {
+    font-size: 24px;
+    margin-top: 100px;
+  }
+  .padding-top {
+    padding-top: 200px;
+  }
+}
+
+.dotted {
+  margin: 20px;
+  margin-top: 180px;
+  border: 1px dashed #34739D;
+  padding: 10px;
+}
+
+.course .dotted {
+  margin-top: 100px;
+}
+
+h1 {
+  font-family: "Asap Condensed";
+  font-weight: 500;
+  color: #B04E5A;
+  font-size: 36px;
+}
+
+h2 {
+  font-family: "Asap Condensed";
+  font-weight: 500;
+  color: #34739D;
+  font-size: 64px;
+}
+
+h3 {
+  font-family: "Asap Condensed";
+  font-weight: 500;
+  font-size: 28px;
+}
+
+ul {
+  margin-left: 15px;
+}
+
+.banner-eee {
+  padding-top: 30%;
+  background-image: url("../images/aa.jpg");
+  background-size: cover;
+  background-position: center 30%;
+  margin-bottom: 20px;
+}
+
+.banner-iem {
+  padding-top: 30%;
+  background-image: url("../images/image-2.jpg");
+  background-size: cover;
+  background-position: center 30%;
+  margin-bottom: 20px;
+}
+
+.banner-starwars {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url("../images/star-wars.jpg");
+  background-size: cover;
+  background-position: center 30%;
+  min-height: 200px;
+}
+
+.header {
+  padding-top: 10%;
+  font-family: "Asap Condensed";
+  font-size: 80px;
+  letter-spacing: 0.08em;
+}
+
+.vertical-text {
+  transform: rotate(180deg);
+  font-family: 'Asap Condensed';
+  font-size: 100px;
+  letter-spacing: 0.2em;
+  writing-mode: tb-rl;
+  height: 100%;
+  position: relative;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+  color: #34739D;
+}
+
+table, th, td {
+  border: 1px solid #34739D;
+}
+
+th {
+  background-color: #34739D;
+  color: white;
+}
+
+table {
+  width: 100%;
+  text-align: center;
+}
+
+.others {
+  background-image: url("../images/general-social.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.others .others-bar {
+  letter-spacing: 0.06em;
+  font-size: 24px;
+}
+
+.others .others-large {
+  font-family: 'Asap Condensed';
+  font-size: 100px;
+}
+
+.jspPane, .scroller {
+  min-height: 100%;
+}
+
+.full-height {
+  min-height: 100vh;
+}
+
+.gray {
+  background-color: #DDDDDD;
+}
+
+.getting-around .gray {
+  margin: 30px 20px;
+  padding: 20px 5px;
+  max-width: 100%;
+}
+
+.getting-around img {
+  max-width: 100%;
+}
+
+.buildings img {
+  width: 100%;
+}
+
+.buildings .gray {
+  padding: 20px;
+  padding-bottom: 10px;
+}
+
+.buildings h5 {
+  font-family: 'Asap Condensed';
+  font-size: 28px;
+  margin: -20px;
+  padding: 10px 20px;
+  margin-bottom: 0px;
+  background-color: #34739D;
+  display: inline-block;
+  color: white;
+}
+
+.buildings ul {
+  margin-top: 10px;
+}
+
+.banner-clubs {
+  width: 100%;
+  padding-top: 30%;
+  background-image: url("../images/slide-1.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 20px;
+}
+
+.clubs img {
+  width: 100%;
+}
+
+.clubs h5 {
+  font-family: 'Asap Condensed';
+  font-weight: normal;
+  font-size: 60px;
+  padding: 10px 20px;
+  background-color: #34739D;
+  /* display: inline-block; */
+  color: white;
+}
+
+.padding-side {
+  padding: 0 15px;
+}
+
+.clubs .and {
+  color: black;
+  font-size: 28px;
+  letter-spacing: 0.2em;
+  margin-bottom: -3px;
+}
+
+/*------------------ RESPONSIVE ---------------------*/
+
+.show-sm {
+  display: none;
+}
+
+.hide-sm {
+  display: block;
+}
+
+.show-md {
+  display: none;
+}
+
+.hide-md {
+  display: block;
+}
+
+@media screen and (max-width: 767px) {
+}
+
+/* @media screen and (min-width: 768px) and (max-width: 992px) {} */
+
+@media screen and (max-width: 992px) {
+  .header {
+    padding: 50px;
+    font-size: 64px;
+  }
+  .dotted {
+    margin-top: 10px;
+  }
+  .show-md {
+    display: block;
+  }
+  .hide-md {
+    display: none;
+  }
+  .show-sm {
+    display: none;
+  }
+  .hide-sm {
+    display: block;
+  }
+  .vertical-text {
+    transform: rotate(0deg);
+    font-size: 64px;
+    writing-mode: initial;
+  }
+  .contacts .padding-top {
+    padding-top: 20px;
+  }
+  .full-height {
+    min-height: initial;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .show-sm {
+    display: block;
+  }
+  .hide-sm {
+    display: none;
+  }
+  .show-md {
+    display: block;
+  }
+  .hide-md {
+    display: none;
+  }
+  .dotted {
+    margin-top: 10px;
+  }
+  .header {
+    padding: 20px;
+    font-size: 48px;
+  }
+  .vertical-text {
+    transform: rotate(0deg);
+    font-size: 48px;
+    text-align: left;
+    writing-mode: initial;
+  }
+  h2 {
+    font-size: 48px;
+    margin-top: 20px;
+  }
+  .course .dotted {
+    margin: 20px 0;
+  }
+  .banner-starwars {
+    min-height: 200px;
+  }
+  .others .others-large {
+    font-size: 48px;
+  }  
+  .getting-around .gray {
+    margin: 0;
+    max-width: 100%;
+  }
+  .clubs h5 {
+    font-size: 24px;
+    padding: 10px 20px;
+  }
+  .clubs .and {
+    display: inline;
+    font-size: 24px;
+    letter-spacing: 0em;
+    color: white;
+  }	
+}

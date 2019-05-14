@@ -221,13 +221,15 @@ a:hover {
 	top: 0px;
 	left: 0;
 	width: 100%;
-	bottom: 10px;
+	padding-bottom: 10px;
+	bottom: 0;
 	overflow: hidden;
 	-webkit-font-smoothing: subpixel-antialiased;
 }
 
 .scroller {
-	padding: 25px 5% 10px 5%;
+	/* padding: 25px 5% 10px 5%; */
+	padding: 0;
 }
 
 .js .content:before,
